@@ -112,4 +112,4 @@ Tested and compatible with:
 
 ## License
 
-© 2024 John Doe. All rights reserved.
+© 2024 AC. All rights reserved.
