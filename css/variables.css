@@ -1,0 +1,28 @@
+/* ============================================================
+   variables.css  –  Design tokens for the portfolio
+   ============================================================ */
+
+:root {
+  /* Colours */
+  --bg:        #0d0f1a;
+  --surface:   #141727;
+  --card:      #1b1f35;
+  --border:    #252b47;
+  --accent:    #6c8eff;
+  --accent2:   #a78bfa;
+  --text:      #e4e8ff;
+  --muted:     #8891b0;
+  --success:   #4ade80;
+  --error:     #f87171;
+
+  /* Typography */
+  --font-head: 'Segoe UI', system-ui, sans-serif;
+  --font-body: system-ui, sans-serif;
+
+  /* Spacing & shape */
+  --radius:    12px;
+  --section-py: 6rem;
+
+  /* Motion */
+  --transition: 0.25s ease;
+}

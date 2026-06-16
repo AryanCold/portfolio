@@ -1,0 +1,64 @@
+/* ============================================================
+   responsive.css  –  Media queries (mobile-first approach)
+   ============================================================ */
+
+/* ── Tablet & below  (≤ 768px) ─────────────────────────── */
+@media (max-width: 768px) {
+
+  /* Hide desktop nav, show burger */
+  .nav-links { display: none; }
+  .burger    { display: flex; }
+
+  /* Hero: stack columns */
+  .hero-inner {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .hero-avatar  { order: -1; }
+  .avatar-wrap  { width: 220px; height: 220px; }
+  .hero-desc    { margin: 0 auto 2rem; }
+  .hero-btns    { justify-content: center; }
+  .hero-stats   { justify-content: center; }
+
+  /* About: stack columns */
+  .about-grid   { grid-template-columns: 1fr; }
+
+  /* Contact: stack columns */
+  .contact-grid { grid-template-columns: 1fr; }
+  .form-row     { grid-template-columns: 1fr; }
+
+  /* Reduce section padding */
+  section { padding: 4rem 0; }
+  :root   { --section-py: 4rem; }
+}
+
+/* ── Mobile  (≤ 480px) ──────────────────────────────────── */
+@media (max-width: 480px) {
+
+  /* Single-column grids */
+  .projects-grid { grid-template-columns: 1fr; }
+  .skills-grid   { grid-template-columns: 1fr; }
+
+  /* Tighten hero text */
+  .hero-title  { font-size: 2rem; }
+  .section-title { font-size: 1.6rem; }
+
+  /* Stack hero stats */
+  .hero-stats {
+    flex-wrap: wrap;
+    gap: 1.25rem;
+  }
+
+  /* Full-width buttons on very small screens */
+  .hero-btns { flex-direction: column; align-items: center; }
+  .hero-btns .btn { width: 100%; max-width: 280px; justify-content: center; }
+}
+
+/* ── Reduced motion ─────────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration:        .01ms !important;
+    animation-iteration-count: 1     !important;
+    transition-duration:       .01ms !important;
+  }
+}

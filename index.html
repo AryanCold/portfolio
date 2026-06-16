@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="John Doe – Full Stack Developer portfolio showcasing projects, skills, and contact information.">
+  <title>Aryan chavan – Full Stack Developer</title>
+
+  <!-- CSS: load variables first, then base styles, then responsive overrides -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- ════════════════ HEADER ════════════════════════════════ -->
+  <header role="banner">
+    <nav role="navigation" aria-label="Main navigation">
+      <div class="logo" aria-label="John Doe – logo">AC</div>
+
+      <ul class="nav-links" role="list">
+        <li><a href="#home" aria-current="page">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact" class="nav-cta">Hire Me</a></li>
+      </ul>
+
+      <button class="burger" id="burger"
+              aria-label="Toggle mobile menu"
+              aria-expanded="false"
+              aria-controls="mobile-nav">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Mobile nav panel -->
+  <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile navigation">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Hire Me</a>
+  </nav>
+
+  <!-- ════════════════ MAIN CONTENT ══════════════════════════ -->
+  <main id="main-content">
+
+    <!-- ── HERO ─────────────────────────────────────────── -->
+    <section id="home" aria-labelledby="hero-title">
+      <div class="container">
+        <div class="hero-inner">
+
+          <div>
+            <div class="hero-badge">Available for freelance work</div>
+
+            <h1 class="hero-title" id="hero-title">
+              <span class="name">Hi, I'm<br>Aryan Chavan</span><br>
+              <span class="role">Full Stack Developer</span>
+            </h1>
+
+            <p class="hero-desc">
+              I craft fast, accessible, and beautifully responsive web experiences
+              using modern HTML, CSS, and JavaScript — and I'm just getting started.
+            </p>
+
+            <div class="hero-btns">
+              <a href="#projects" class="btn btn-primary">View My Work ↓</a>
+              <a href="#contact"  class="btn btn-outline">Get in Touch</a>
+            </div>
+
+            <div class="hero-stats">
+              <div>
+                <div class="stat-num">3+</div>
+                <div class="stat-label">Projects Built</div>
+              </div>
+              <div>
+                <div class="stat-num">5</div>
+                <div class="stat-label">Techs Learned</div>
+              </div>
+              <div>
+                <div class="stat-num">100%</div>
+                <div class="stat-label">Passion Driven</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-avatar" aria-hidden="true">
+            <div class="avatar-wrap">
+              <div class="avatar-ring"></div>
+              <div class="avatar-img">
+                <!-- Replace emoji with: <img src="images/profile.jpg" alt="John Doe"> -->
+                🧑‍💻
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── ABOUT ─────────────────────────────────────────── -->
+    <section id="about" aria-labelledby="about-title">
+      <div class="container">
+        <div class="about-grid">
+
+          <div class="reveal">
+            <span class="section-label">About Me</span>
+            <h2 class="section-title" id="about-title">
+              Passionate about building things for the web
+            </h2>
+            <p class="section-sub">
+              I'm a self-driven developer currently learning the full stack.
+              I love turning designs into pixel-perfect, accessible, and performant
+              websites. When I'm not coding, I enjoy open-source contributions
+              and tech writing.
+            </p>
+            <a href="#contact" class="btn btn-primary">Let's Work Together</a>
+          </div>
+
+          <div class="reveal">
+            <div class="about-card">
+              <div class="about-card-icon" aria-hidden="true">🎯</div>
+              <h3>Goal-Oriented</h3>
+              <p>Every line of code I write serves a purpose — building toward a clean, functional outcome.</p>
+            </div>
+            <div class="about-card">
+              <div class="about-card-icon" aria-hidden="true">♿</div>
+              <h3>Accessibility First</h3>
+              <p>I build with ARIA, semantic HTML, and keyboard navigation in mind from day one.</p>
+            </div>
+            <div class="about-card">
+              <div class="about-card-icon" aria-hidden="true">📱</div>
+              <h3>Mobile-First Design</h3>
+              <p>Responsive, fluid layouts that look great from 320 px all the way to 4 K displays.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── SKILLS ─────────────────────────────────────────── -->
+    <section id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <span class="section-label">What I Know</span>
+        <h2 class="section-title" id="skills-title">Skills &amp; Technologies</h2>
+        <p class="section-sub">
+          A growing toolkit of modern web technologies I use to build reliable,
+          scalable projects.
+        </p>
+
+        <div class="skills-grid">
+          <div class="skill-cat reveal">
+            <div class="skill-cat-head">
+              <span class="skill-cat-icon" aria-hidden="true">🌐</span>
+              <h3>Frontend</h3>
+            </div>
+            <div>
+              <span class="skill-tag">HTML5</span>
+              <span class="skill-tag">CSS3</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">React</span>
+              <span class="skill-tag">Flexbox</span>
+              <span class="skill-tag">CSS Grid</span>
+              <span class="skill-tag">ARIA</span>
+            </div>
+          </div>
+
+          <div class="skill-cat reveal">
+            <div class="skill-cat-head">
+              <span class="skill-cat-icon" aria-hidden="true">⚙️</span>
+              <h3>Backend</h3>
+            </div>
+            <div>
+              <span class="skill-tag">Node.js</span>
+              <span class="skill-tag">Express</span>
+              <span class="skill-tag">REST APIs</span>
+              <span class="skill-tag">MongoDB</span>
+              <span class="skill-tag">SQL</span>
+            </div>
+          </div>
+
+          <div class="skill-cat reveal">
+            <div class="skill-cat-head">
+              <span class="skill-cat-icon" aria-hidden="true">🛠️</span>
+              <h3>Tools &amp; Workflow</h3>
+            </div>
+            <div>
+              <span class="skill-tag">Git</span>
+              <span class="skill-tag">GitHub</span>
+              <span class="skill-tag">VS Code</span>
+              <span class="skill-tag">npm</span>
+              <span class="skill-tag">Figma</span>
+              <span class="skill-tag">Chrome DevTools</span>
+            </div>
+          </div>
+
+          <div class="skill-cat reveal">
+            <div class="skill-cat-head">
+              <span class="skill-cat-icon" aria-hidden="true">✅</span>
+              <h3>Best Practices</h3>
+            </div>
+            <div>
+              <span class="skill-tag">Responsive Design</span>
+              <span class="skill-tag">Web Accessibility</span>
+              <span class="skill-tag">Performance</span>
+              <span class="skill-tag">SEO Basics</span>
+              <span class="skill-tag">Clean Code</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── PROJECTS ─────────────────────────────────────────── -->
+    <section id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <span class="section-label">My Work</span>
+        <h2 class="section-title" id="projects-title">Featured Projects</h2>
+        <p class="section-sub">
+          A selection of projects I've built to practise and push my skills further.
+        </p>
+
+        <div class="projects-grid">
+
+          <article class="project-card reveal" aria-label="E-commerce Website project">
+            <div class="project-thumb project-thumb-1">
+              <!-- Replace with: <img src="images/project1.jpg" alt="E-commerce Website screenshot"> -->
+              <span aria-hidden="true">🛒</span>
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="project-tag">React</span>
+                <span class="project-tag">Node.js</span>
+                <span class="project-tag">MongoDB</span>
+              </div>
+              <h3>E-commerce Website</h3>
+              <p>A full-featured online store with product listings, cart management, and order tracking.</p>
+              <div class="project-links">
+               
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" aria-label="Task Manager App project">
+            <div class="project-thumb project-thumb-2">
+              <span aria-hidden="true">📋</span>
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="project-tag">HTML5</span>
+                <span class="project-tag">CSS3</span>
+                <span class="project-tag">JavaScript</span>
+              </div>
+              <h3>Task Manager App</h3>
+              <p>A drag-and-drop task manager with local storage persistence and priority labelling.</p>
+              <div class="project-links">
+               
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" aria-label="Weather Dashboard project">
+            <div class="project-thumb project-thumb-3">
+              <span aria-hidden="true">🌦️</span>
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="project-tag">JavaScript</span>
+                <span class="project-tag">REST API</span>
+                <span class="project-tag">CSS Grid</span>
+              </div>
+              <h3>Weather Dashboard</h3>
+              <p>Real-time weather app consuming the OpenWeatherMap API with 5-day forecasts.</p>
+              <div class="project-links">
+               
+                
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CONTACT ─────────────────────────────────────────── -->
+    <section id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <span class="section-label">Get In Touch</span>
+        <h2 class="section-title" id="contact-title">Let's build something together</h2>
+
+        <div class="contact-grid">
+
+          <div class="reveal">
+            <h3>Contact Info</h3>
+            <div class="contact-item">
+              <span aria-hidden="true">📧</span>
+              <span>chavanaryan808@gmail.com</span>
+            </div>
+            <div class="contact-item">
+              <span aria-hidden="true">📍</span>
+              <span>Mahrastra, India</span>
+            </div>
+            <div class="contact-item">
+              <span aria-hidden="true">⏰</span>
+              <span>Mon – Fri, 9 am – 6 pm PST</span>
+            </div>
+
+            <div class="socials" aria-label="Social media links">
+              <a href="#" class="social-btn" aria-label="GitHub"   title="GitHub">🐙</a>
+              <a href="#" class="social-btn" aria-label="LinkedIn" title="LinkedIn">💼</a>
+              <a href="#" class="social-btn" aria-label="Twitter"  title="Twitter">🐦</a>
+              <a href="#" class="social-btn" aria-label="CodePen"  title="CodePen">✏️</a>
+            </div>
+          </div>
+
+          <div class="reveal">
+            <div id="form-message" class="form-message" role="alert" aria-live="polite"></div>
+
+            <form class="contact-form" id="contact-form" novalidate aria-label="Contact form">
+
+              <div class="form-row">
+                <div class="form-group" id="fg-name">
+                  <label for="name">Full Name *</label>
+                  <input type="text" id="name" name="name"
+                         placeholder="Jane Smith"
+                         autocomplete="name"
+                         required aria-required="true"
+                         aria-describedby="name-error">
+                  <span class="field-error" id="name-error" role="alert">
+                    Please enter your full name.
+                  </span>
+                </div>
+
+                <div class="form-group" id="fg-email">
+                  <label for="email">Email Address *</label>
+                  <input type="email" id="email" name="email"
+                         placeholder="jane@example.com"
+                         autocomplete="email"
+                         required aria-required="true"
+                         aria-describedby="email-error">
+                  <span class="field-error" id="email-error" role="alert">
+                    Please enter a valid email address.
+                  </span>
+                </div>
+              </div>
+
+              <div class="form-group" id="fg-subject">
+                <label for="subject">Subject *</label>
+                <input type="text" id="subject" name="subject"
+                       placeholder="Freelance project, Collaboration…"
+                       required aria-required="true"
+                       aria-describedby="subject-error">
+                <span class="field-error" id="subject-error" role="alert">
+                  Please enter a subject.
+                </span>
+              </div>
+
+              <div class="form-group" id="fg-message">
+                <label for="message">Message *</label>
+                <textarea id="message" name="message"
+                          placeholder="Tell me about your project…"
+                          required aria-required="true"
+                          aria-describedby="message-error"></textarea>
+                <span class="field-error" id="message-error" role="alert">
+                  Please enter a message (at least 20 characters).
+                </span>
+              </div>
+
+              <div class="form-submit">
+                <button type="submit" class="btn btn-primary" id="submit-btn">
+                  Send Message ✉️
+                </button>
+              </div>
+
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ════════════════ FOOTER ════════════════════════════════ -->
+  <footer role="contentinfo">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">AC</div>
+        <p>© 2024 AC . All rights reserved.</p>
+        <nav class="footer-links" aria-label="Footer navigation">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS loaded at end of body for performance -->
+  <script src="js/navigation.js"></script>
+
+</body>
+</html>
